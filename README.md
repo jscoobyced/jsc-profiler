@@ -20,13 +20,18 @@ It is a KnockoutJS based application, backed by a SQLite database. It can be eas
 [JS Hint](https://marketplace.eclipse.org/content/jshint-eclipse)  
 [Markdown Text Editor](http://marketplace.eclipse.org/content/markdown-text-editor)  
 
+### Gradle  
+
+* Download and Extract Gradle (suggested 3.x.x or above):  
+[Main Download](https://gradle.org/gradle-download/)
+
 ### Glassfish
 
 * Download and install GlassFish (suggested 4.1.1 or above):    
 [Main Download Page](https://glassfish.java.net/download.html)  
 * Add the <Glassfish_Home_Folder>/glassfish/bin to your PATH  
 
-* Download and copy **sqlite-jdbc-3.8.11.2.jar** to <Glassfish_Home_Folder>/glassfish/domains/domain1/lib/ext/ folder
+* [Download](http://central.maven.org/maven2/org/xerial/sqlite-jdbc/3.8.11.2/sqlite-jdbc-3.8.11.2.jar) and copy **sqlite-jdbc-3.8.11.2.jar** to <Glassfish_Home_Folder>/glassfish/domains/domain1/lib/ext/ folder
 * Create a new JDBC Connection pool (replace **/home/cedric/workspace/sqlite.db** with any preferred path
 ```
 asadmin create-jdbc-connection-pool --datasourceclassname org.sqlite.SQLiteDataSource --restype javax.sql.DataSource  --property url="jdbc\:sqlite\:/home/cedric/workspace/sqlite.db" ProfilerPool  

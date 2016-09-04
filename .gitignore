@@ -1,0 +1,12 @@
+.gradle/
+.settings/
+.classpath
+.project
+gradle/
+bin/
+build/
+node/node_modules/
+node/typings/
+WebContent/script/
+WebContent/styles/
+WebContent/*.svg
